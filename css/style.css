@@ -140,7 +140,7 @@ img.logobox {
     }
 }
 
-@media(maX-width:769px) {    
+@media(max-width:769px) {    
     .snapbox {
         display: flex;
         gap: 16px;
@@ -209,6 +209,7 @@ img.logobox {
     width: 100%;
     text-align: center;
 }
+
 
 
 
