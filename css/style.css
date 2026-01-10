@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .tab {
     margin: 0 auto;
 }
@@ -202,4 +208,5 @@ img.logobox {
     width: 100%;
     text-align: center;
 }
+
 
