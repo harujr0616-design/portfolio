@@ -148,6 +148,7 @@ img.logobox {
         overflow-y: hidden;
         scroll-behavior: smooth;
         scroll-snap-type: mandatory;
+        height: 250px;
     }
 }
 
@@ -208,5 +209,6 @@ img.logobox {
     width: 100%;
     text-align: center;
 }
+
 
 
