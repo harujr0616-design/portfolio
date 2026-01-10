@@ -104,6 +104,12 @@ img.logobox {
     }
 }
 
+@media(max-width:769px) {
+    .arrow {     
+        display: none;
+    }
+}
+
 @media(min-width:769px) {
     .slider-wrap:hover .arrow{
         opacity: 1;
@@ -196,3 +202,4 @@ img.logobox {
     width: 100%;
     text-align: center;
 }
+
