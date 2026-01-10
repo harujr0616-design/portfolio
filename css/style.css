@@ -127,6 +127,7 @@ img.logobox {
 .slider-wrap {
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 
 /* SNAPセクション設定 */
@@ -147,6 +148,7 @@ img.logobox {
         overflow-x: auto;
         overflow-y: hidden;
         height: 250px;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
@@ -207,8 +209,3 @@ img.logobox {
     width: 100%;
     text-align: center;
 }
-
-
-
-
-
