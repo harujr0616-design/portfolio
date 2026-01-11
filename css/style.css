@@ -91,9 +91,12 @@ img.logobox {
     max-width: 1050px;
     margin: 0 auto;
     padding: 16px 16px;
+    
     /* border: 1px solid #4a4848; */
     overflow: hidden;
 }
+
+
 
 .slidemain{
     width: 100%;
@@ -101,13 +104,20 @@ img.logobox {
 }
 
 .mainimgbox {
-    display: block;
-    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 769px) {
+  .main_visual {
+    aspect-ratio: 3 / 4;
+  }
 }
 
 .mainimgbox img {
+    display: block;
     width: 100%;
-    flex-shrink: 0;
+    height: 100%;
+    object-fit: cover;
     /* height: auto;
     display: block;
     margin:0 auto; */
