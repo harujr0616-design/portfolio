@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 html,body{
     margin: 0;
     padding: 0;
@@ -148,7 +155,7 @@ img.logobox {
         gap: 16px;
         overflow-x: auto;
         overflow-y: hidden;
-        height: 240px;
+        height: auto;
     }
 }
 
@@ -175,7 +182,7 @@ img.logobox {
 /* Newsセクション設定 */
 @media(max-width:769px) {    
     .news {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     border-bottom: 1px solid #4a4848;
     gap: 16px;
@@ -193,6 +200,13 @@ img.logobox {
     }
 }
 
+@media(max-width:769px) {
+  .news img {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+  }
+}
 
 .news img{
     height:250px;
