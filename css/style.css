@@ -201,9 +201,9 @@ img.logobox {
         gap: 16px;
         overflow-x: auto;
         overflow-y: hidden;
-        height: auto;
     }
 }
+
 
 .snap {
     display: block;
@@ -285,4 +285,3 @@ img.logobox {
     width: 100%;
     text-align: center;
 }
-
