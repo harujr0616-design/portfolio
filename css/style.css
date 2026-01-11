@@ -6,11 +6,29 @@
   box-sizing: border-box;
 }
 
+html{
+    font-size: 16px;
+}
+
+body{
+
+    font-size: 1rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
 
 html,body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 .tab {
@@ -33,12 +51,21 @@ img.logobox {
     width: 100%;
 }
 
+@media(min-width:769px) {
 .tabmenu li {
     cursor: pointer;
     padding: 20px;
     margin-right: 5px;
     pointer-events: auto;
     transition: color 0.2s;
+}
+}
+
+@media(max-width:769px) {
+    .tabmenu li {
+        padding: 10px;
+        margin-right: 5px;
+    }
 }
 
 @media(min-width:769px) {
@@ -216,8 +243,8 @@ img.logobox {
 
 @media(max-width:769px) {
   .news img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
   }
 }
