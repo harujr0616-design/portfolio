@@ -54,7 +54,7 @@ img.logobox {
     max-width: 1050px;
     margin: 0 auto;
     padding: 16px 16px;
-    border: 1px solid #4a4848;
+    /* border: 1px solid #4a4848; */
     overflow: hidden;
 }
 
@@ -66,6 +66,7 @@ img.logobox {
 .mainimgbox {
     display: block;
     width: 100%;
+    max-width: 769px;
 }
 
 .mainimgbox img {
@@ -101,7 +102,7 @@ img.logobox {
     display: block;
     width:100%;
     max-width: 1000PX;
-    border: 1px solid #4a4848;
+    /* border: 1px solid #4a4848; */
 }
 
 .itemimg {
@@ -115,6 +116,19 @@ img.logobox {
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s;
+        /* background: none; */
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: none;
+        flex-shrink: 0;
+        background-color:  rgb(198, 195, 195);
+    }
+    .arrow.right  {     
+        margin-left: 10px;
+    }
+    .arrow.left  {     
+        margin-right: 10px;
     }
 }
 
@@ -136,12 +150,15 @@ img.logobox {
     display: flex;
     width: 100%;
     overflow: hidden;
+    align-items: center; 
 }
 
 /* SNAPセクション設定 */
 @media(min-width:769px) {
     .snapbox {
         display: flex;
+        width:100%;
+        max-width: 769px;
         gap: 16px;
         overflow-x: hidden;
         scroll-behavior: smooth;
@@ -163,7 +180,7 @@ img.logobox {
     display: block;
     min-width:220PX;
     aspect-ratio: 3/4;
-    border: 1px solid #4a4848;
+    /* border: 1px solid #4a4；48； */
 }
 
 .snap img {
