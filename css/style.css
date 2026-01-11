@@ -94,6 +94,7 @@ img.logobox {
     overflow: hidden;
 }
 
+
 .slide_main{
     width: 100%;
     overflow: hidden;
@@ -103,12 +104,13 @@ img.logobox {
     aspect-ratio: 16 / 9;
 }
 
-/* @media (max-width: 769px) {
+@media (max-width: 769px) {
   .mainimg_box {
     aspect-ratio: 3 / 4;
   }
-} */
+}
 
+.mainimg_box picture,
 .mainimg_box img {
     display: block;
     width: 100%;
@@ -307,4 +309,3 @@ img.logobox {
     width: 100%;
     text-align: center;
 }
-
