@@ -201,20 +201,29 @@ img.logobox {
         gap: 16px;
         overflow-x: auto;
         overflow-y: hidden;
-        height: auto;
     }
 }
 
+
+@media(min-width:769px) {
 .snap {
     display: block;
     min-width:220PX;
     aspect-ratio: 3/4;
     /* border: 1px solid #4a4；48； */
 }
+}
+
+@media(max-width:769px) {
+.snap {
+    display: block;
+    aspect-ratio: 3/4;
+    /* border: 1px solid #4a4；48； */
+}
+}
 
 .snap img {
     max-width: 100%;
-    height: 100%;
     object-fit: cover;
     object-position: center;
 }
