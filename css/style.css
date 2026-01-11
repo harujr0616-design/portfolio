@@ -6,23 +6,24 @@
   box-sizing: border-box;
 }
 
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+  /* フォントサイズ */
+
 html{
     font-size: 16px;
 }
 
 body{
-
     font-size: 1rem;
 }
 
 h2 {
   font-size: 1.25rem;
-}
-
-html,body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -31,6 +32,7 @@ html,body{
   }
 }
 
+/* ヘッダー */
 .tab {
     margin: 0 auto;
 }
@@ -69,16 +71,13 @@ img.logobox {
 }
 
 @media(min-width:769px) {
-.tabmenu li {
-    cursor: pointer;
-    padding: 20px;
-    pointer-events: auto;
-    transition: color 0.2s;
+    .tabmenu li {
+        cursor: pointer;
+        padding: 20px;
+        pointer-events: auto;
+        transition: color 0.2s;
     }
-}
 
-
-@media(min-width:769px) {
     .menu:hover {
         background-color: rgb(198, 195, 195);
         color: #fff;
@@ -91,36 +90,30 @@ img.logobox {
     max-width: 1050px;
     margin: 0 auto;
     padding: 16px 16px;
-    
     /* border: 1px solid #4a4848; */
     overflow: hidden;
 }
 
-
-
-.slidemain{
+.slide_main{
     width: 100%;
     overflow: hidden;
 }
 
-.mainimgbox {
+.mainimg_box {
     aspect-ratio: 16 / 9;
 }
 
 @media (max-width: 769px) {
-  .main_visual {
+  .mainimg_box {
     aspect-ratio: 3 / 4;
   }
 }
 
-.mainimgbox img {
+.mainimg_box img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* height: auto;
-    display: block;
-    margin:0 auto; */
 }
 
 /* セクション共通 */
@@ -134,7 +127,6 @@ img.logobox {
     background-color: rgb(198, 195, 195);
     color: #fff;
     padding: 14px 20px;
-    /* font-size: 18px; */
     letter-spacing: 0.05em;
 }
 
@@ -158,7 +150,6 @@ img.logobox {
 
 @media (max-width: 768px) {
   .product_list {
-    display: flex;
     flex-wrap: wrap;
     gap: 12px;
   }
@@ -182,25 +173,25 @@ img.logobox {
         flex-shrink: 0;
         background-color:  rgb(198, 195, 195);
     }
+
     .arrow.right  {     
         margin-left: 10px;
     }
+
     .arrow.left  {     
         margin-right: 10px;
+    }
+
+    .slider-wrap:hover .arrow{
+        opacity: 1;
+        pointer-events: auto;
+        cursor: pointer;
     }
 }
 
 @media(max-width:769px) {
     .arrow {     
         display: none;
-    }
-}
-
-@media(min-width:769px) {
-    .slider-wrap:hover .arrow{
-        opacity: 1;
-        pointer-events: auto;
-        cursor: pointer;
     }
 }
 
@@ -240,7 +231,7 @@ img.logobox {
 
 @media(max-width:769px) {
     .snap {
-        min-width:150PX;
+        min-width:120PX;
 }
 
 }
@@ -265,45 +256,41 @@ img.logobox {
 }
 
 /* Newsセクション設定 */
-@media(max-width:769px) {    
     .news {
-    max-width: 100%;
-    display: flex;
-    border-bottom: 1px solid #4a4848;
-    gap: 16px;
-    padding: 16px 0;
+        max-width: 100%;
+        display: flex;
+        border-bottom: 1px solid #4a4848;
+        gap: 16px;
+        padding: 16px 0;
     }
-}
 
-@media(min-width:769px) {    
+/* @media(min-width:769px) {    
 .news {
-    max-width: 100%;
-    display: flex;
-    border-bottom: 1px solid #4a4848;
+        max-width: 100%;
+        display: flex;
+        border-bottom: 1px solid #4a4848;
     gap: 16px;
     padding: 16px 0;
     }
+} */
+
+
+.news img{
+    height:250px;
+    width:250px;
+    object-fit: cover;
 }
 
 @media(max-width:769px) {
   .news img {
     width: 150px;
     height: 150px;
-    object-fit: cover;
   }
 }
 
-@media(min-width:769px) { 
-.news img{
-    height:250px;
-    width:250px;
-    object-fit: cover;
-}
-}
-
-.news time{
+/* .time{
     margin:10px 0;
-}
+} */
 
 /* フッター設定 */
 .footermenu{
