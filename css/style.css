@@ -147,8 +147,7 @@ img.logobox {
         gap: 16px;
         overflow-x: auto;
         overflow-y: hidden;
-        height: 250px;
-        -webkit-overflow-scrolling: touch;
+        height: 240px;
     }
 }
 
