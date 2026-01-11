@@ -1,5 +1,8 @@
 class Script{
     constructor(){
+        if(window.innerWidth<768){
+            return;
+        }
         this.slider = document.querySelector('.snapbox');
         this.next = document.querySelector('.arrow.right');
         this.prev = document.querySelector('.arrow.left');
