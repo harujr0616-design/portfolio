@@ -35,10 +35,27 @@ html,body{
     margin: 0 auto;
 }
 
+.sitelogo{
+    margin: 0; 
+}
+
+.headerinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 16px; */
+}
+
 img.logobox {
     display: block;
-    margin: 0 auto;
-    /* height: 50px; */
+    height: auto;
+    width: 200px;
+}
+
+@media (max-width: 769px) {
+  img.logobox {
+    width: 100px;  
+  }
 }
 
 .tabmenu {
@@ -207,10 +224,16 @@ img.logobox {
 
 .snap {
     display: block;
-    min-width:220PX;
+    min-width:210PX;
     /* border: 1px solid #4a4；48； */
 }
 
+@media(max-width:769px) {
+    .snap {
+        min-width:150PX;
+}
+
+}
 
 .snap_img {
     aspect-ratio: 3/4;
