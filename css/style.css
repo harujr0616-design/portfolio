@@ -23,6 +23,7 @@ img.logobox {
     list-style: none;
     gap:20px;
     justify-content: center;
+    width: 100%;
 }
 
 .tabmenu li {
@@ -56,7 +57,7 @@ img.logobox {
 }
 
 .mainimgbox {
-    display: flex;
+    display: block;
     width: 100%;
 }
 
@@ -152,6 +153,7 @@ img.logobox {
 }
 
 .snap {
+    display: block;
     min-width:220PX;
     aspect-ratio: 3/4;
     border: 1px solid #4a4848;
@@ -171,17 +173,26 @@ img.logobox {
 }
 
 /* Newsセクション設定 */
-
-.news {
-    max-width: 900px;
-}
-
-.news {
+@media(max-width:769px) {    
+    .news {
+    width: 100%;
     display: flex;
     border-bottom: 1px solid #4a4848;
     gap: 16px;
     padding: 16px 0;
+    }
 }
+
+@media(min-width:769px) {    
+.news {
+    max-width: 900px;
+    display: flex;
+    border-bottom: 1px solid #4a4848;
+    gap: 16px;
+    padding: 16px 0;
+    }
+}
+
 
 .news img{
     height:250px;
