@@ -38,7 +38,7 @@ html,body{
 img.logobox {
     display: block;
     margin: 0 auto;
-    height: 50px;
+    /* height: 50px; */
 }
 
 .tabmenu {
@@ -205,14 +205,12 @@ img.logobox {
     }
 }
 
-
-@media(min-width:769px) {
 .snap {
     display: block;
     min-width:220PX;
     /* border: 1px solid #4a4；48； */
 }
-}
+
 
 .snap_img {
     aspect-ratio: 3/4;
@@ -287,3 +285,4 @@ img.logobox {
     width: 100%;
     text-align: center;
 }
+
