@@ -37,11 +37,11 @@ h2 {
     margin: 0 auto;
 }
 
-.sitelogo{
+.site_logo{
     margin: 0; 
 }
 
-.headerinner {
+.header_inner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +60,7 @@ img.logobox {
   }
 }
 
-.tabmenu {
+.tab_menu {
     display: flex;
     height: 80px;
     cursor: pointer;
@@ -71,7 +71,7 @@ img.logobox {
 }
 
 @media(min-width:769px) {
-    .tabmenu li {
+    .tab_menu li {
         cursor: pointer;
         padding: 20px;
         pointer-events: auto;
@@ -145,7 +145,7 @@ img.logobox {
     /* border: 1px solid #4a4848; */
 }
 
-.itemimg {
+.item_img {
     width:100%;
     max-width:1000px;
 }
@@ -206,7 +206,7 @@ img.logobox {
 
 /* SNAPセクション設定 */
 @media(min-width:769px) {
-    .snapbox {
+    .snap_box {
         display: flex;
         gap: 16px;
         overflow-x: hidden;
@@ -216,7 +216,7 @@ img.logobox {
 }
 
 @media(max-width:769px) {    
-    .snapbox {
+    .snap_box {
         display: flex;
         gap: 16px;
         overflow-x: auto;
@@ -295,7 +295,7 @@ img.logobox {
 } */
 
 /* フッター設定 */
-.footermenu{
+.footer_menu{
     display:flex;
     gap:16px;
     list-style: none;
