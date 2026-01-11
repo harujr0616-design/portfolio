@@ -214,6 +214,8 @@ img.logobox {
 
 .snap_img {
     aspect-ratio: 3/4;
+    width: 100%;
+    overflow: hidden;
 }
 
 .snap img {
