@@ -93,6 +93,13 @@ img.logobox {
     }
 }
 
+@media (max-width: 769px) {
+  .tabmenu li:active {
+    background-color: rgb(198, 195, 195);
+    color: #fff;
+  }
+}
+
 /* メインビジュアル */
 .main_visual {
     width: 100%;
