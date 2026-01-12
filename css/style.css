@@ -73,7 +73,6 @@ img.logobox {
     gap:20px;
     justify-content: center;
     width: 100%;
-    font-size: 16px;
     line-height: 1.2;
     padding: 6px 16px;
     margin: 0;
@@ -140,8 +139,13 @@ img.logobox {
     color: #fff;
     padding: 5px 15px;
     letter-spacing: 0.05em;
-    font-size: 16px;
     line-height: 1.5;
+}
+
+@media (max-width: 769px) {
+  .section_title {
+    padding: 4px 12px;
+  }
 }
 
 /* 商品セクション設定 */
@@ -214,7 +218,7 @@ img.logobox {
     width: 100%;
     overflow: hidden;
     align-items: center; 
-    padding: 5px 0px;
+    padding: 15px 0px;
 }
 
 /* SNAPセクション設定 */
