@@ -100,8 +100,7 @@ img.logobox {
   }
 }
 
-.tabmenu li a {
-  display: block;
+.tab{
   padding: 14px 20px;
 }
 
