@@ -93,13 +93,6 @@ img.logobox {
     }
 }
 
-@media (max-width: 769px) {
-  .tabmenu li a:active {
-    background-color: rgb(198, 195, 195);
-    color: #fff;
-  }
-}
-
 .tab{
   padding: 14px 20px;
 }
@@ -337,3 +330,4 @@ img.logobox {
     width: 100%;
     text-align: center;
 }
+
